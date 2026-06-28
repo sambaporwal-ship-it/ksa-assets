@@ -35,5 +35,31 @@
   padding: 24px; /* Adjust to match your 50% clear space visual */
   margin-bottom: var(--space-6);
 }
+
+/* Kayak Paddle Bullet System */
+.ksa-list {
+  list-style: none; /* Removes default dots */
+  padding-left: 0;
+}
+
+.ksa-list li {
+  position: relative;
+  padding-left: 30px; /* Space for the icon */
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Creating the Paddle with CSS (No image files needed) */
+.ksa-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary-gold);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%); /* The paddle shape */
+}
 </style>
 
