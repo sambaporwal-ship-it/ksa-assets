@@ -1,30 +1,53 @@
 <style>
-/* This CSS forces the KSA style onto the list */
-.ksa-list {
-  list-style: none;
-  padding-left: 0;
+/* 1. Global Variables */
+:root {
+  --bg-primary: #FAFAF8;
+  --primary-gold: #C5A880;
+  --royal-blue: #0047AB;
+  --text-primary: #1A2B45;
+  --text-secondary: #4A5568;
+  --space-6: 32px;
 }
+
+/* 2. Global Body/Header Styling */
+body { 
+  background-color: var(--bg-primary) !important; 
+}
+
+.site-header {
+  padding: 24px;
+  margin-bottom: var(--space-6);
+}
+
+/* 3. Dark Mode Overrides */
+[data-theme="dark"] {
+  --bg-primary: #070B13;
+  --text-primary: #FFFFFF;
+  --text-secondary: #8E9AA8;
+}
+
+/* 4. Kayak Paddle Bullet System */
+.ksa-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
 .ksa-list li {
   position: relative;
   padding-left: 30px;
   margin-bottom: 12px;
-  color: #1A2B45; /* Your primary text color */
-  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+  color: var(--text-secondary);
 }
+
 .ksa-list li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 6px;
+  top: 8px;
   width: 12px;
   height: 12px;
-  background-color: #C5A880; /* Your gold brand color */
+  background-color: var(--primary-gold);
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
 </style>
-
-<ul class="ksa-list">
-  <li>Expert Advisory Services</li>
-  <li>Strategic Risk Management</li>
-  <li>Regulatory Compliance Support</li>
-</ul>
