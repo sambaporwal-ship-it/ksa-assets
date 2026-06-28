@@ -17,6 +17,7 @@
 }
 .ksa-list li {
   padding-left: 20px;
+  body { background-color: #FAFAF8 !important; }
   background-image: var(--paddle-icon);
   background-repeat: no-repeat;
   background-position: 0 6px;
