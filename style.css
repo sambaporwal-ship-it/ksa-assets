@@ -1,65 +1,30 @@
 <style>
-:root {
-  /* Colors */
-  --bg-primary: #FAFAF8;
-  --primary-gold: #C5A880;
-  --royal-blue: #0047AB;
-  --text-primary: #1A2B45;
-
-  /* Paddle Bullet SVG (The KSA signature) */
-  --paddle-icon: url('data:image/svg+xml;utf8,<svg width="12" height="12" viewBox="0 0 12 12" fill="%23C5A880" xmlns="http://www.w3.org/2000/svg"><path d="M6 0L12 12H0L6 0Z"/></svg>');
-}
-
-/* Paddle Bullet List Helper */
+/* This CSS forces the KSA style onto the list */
 .ksa-list {
   list-style: none;
   padding-left: 0;
 }
 .ksa-list li {
-  padding-left: 20px;
-  body { background-color: #FAFAF8 !important; }
-  background-image: var(--paddle-icon);
-  background-repeat: no-repeat;
-  background-position: 0 6px;
-  margin-bottom: 10px;
-}
-
-/* Dark Mode Overrides */
-[data-theme="dark"] {
-  --bg-primary: #070B13;
-  --text-primary: #FFFFFF;
-}
-
-/* Protect the logo with 50% clear space */
-.site-header {
-  padding: 24px; /* Adjust to match your 50% clear space visual */
-  margin-bottom: var(--space-6);
-}
-
-/* Kayak Paddle Bullet System */
-.ksa-list {
-  list-style: none; /* Removes default dots */
-  padding-left: 0;
-}
-
-.ksa-list li {
   position: relative;
-  padding-left: 30px; /* Space for the icon */
+  padding-left: 30px;
   margin-bottom: 12px;
-  line-height: 1.6;
-  color: var(--text-secondary);
+  color: #1A2B45; /* Your primary text color */
+  font-family: 'DM Sans', sans-serif;
 }
-
-/* Creating the Paddle with CSS (No image files needed) */
 .ksa-list li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 8px;
+  top: 6px;
   width: 12px;
   height: 12px;
-  background-color: var(--primary-gold);
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%); /* The paddle shape */
+  background-color: #C5A880; /* Your gold brand color */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
 </style>
 
+<ul class="ksa-list">
+  <li>Expert Advisory Services</li>
+  <li>Strategic Risk Management</li>
+  <li>Regulatory Compliance Support</li>
+</ul>
