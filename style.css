@@ -24,3 +24,9 @@
   margin-bottom: 10px;
 }
 </style>
+
+/* Dark Mode Overrides */
+[data-theme="dark"] {
+  --bg-primary: #070B13;
+  --text-primary: #FFFFFF;
+}
