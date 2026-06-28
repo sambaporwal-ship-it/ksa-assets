@@ -1,0 +1,25 @@
+<style>
+:root {
+  /* Colors */
+  --bg-primary: #FAFAF8;
+  --primary-gold: #C5A880;
+  --royal-blue: #0047AB;
+  --text-primary: #1A2B45;
+
+  /* Paddle Bullet SVG (The KSA signature) */
+  --paddle-icon: url('data:image/svg+xml;utf8,<svg width="12" height="12" viewBox="0 0 12 12" fill="%23C5A880" xmlns="http://www.w3.org/2000/svg"><path d="M6 0L12 12H0L6 0Z"/></svg>');
+}
+
+/* Paddle Bullet List Helper */
+.ksa-list {
+  list-style: none;
+  padding-left: 0;
+}
+.ksa-list li {
+  padding-left: 20px;
+  background-image: var(--paddle-icon);
+  background-repeat: no-repeat;
+  background-position: 0 6px;
+  margin-bottom: 10px;
+}
+</style>
